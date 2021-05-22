@@ -28,3 +28,6 @@ If you are using cuda, pay attention to change the 'DEVICE' in the code and empl
 
 ## Benchmark
 I have not set up a benchmark myself. But I find something very interesting and we might utilize the [tool](https://github.com/open-mmlab/mmsegmentation).
+
+## Data Loader
+The notebook Image_loader.ipynb offers an image load helper under the 'Dataset' Class in pytorch. It provides some functions such as flip, rotate, resize, random crop, etc. Also, we can attach more functions on that by utilize the [albumentations package](https://github.com/albumentations-team/albumentations)
