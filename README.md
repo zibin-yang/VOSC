@@ -3,10 +3,9 @@
  Usage
 please follow the instructions to profiling authors.
 
-## Dataset Preparation`
-Parameters:
+## Dataset Preparation
 ```
-usage: prepare_dataset.py [-h] [-i INPUT] [-o OUTPUT]
+usage: prepare_dataset.py [-h] [-i INPUT] [-o OUTPUT] [-s SIZE] [-l LENGTH]
 
 optional arguments:
   -i INPUT      path to input dataset(default = './train/outdoor')
@@ -18,3 +17,14 @@ running the script usage:
 ```
 python3 prepare_dataset.py -i path_to_dataset_scenario_dir 
 ```
+
+## FPN segmentation
+```
+usage: python fpn_segmentation.py 
+```
+running the script to train
+
+If you are using cuda, pay attention to change the 'DEVICE' in the code and employ more workers in the dataloader of training dataset. The details of training time will be covered in Section 7.2 in the report. 
+
+## Benchmark
+I have not set up a benchmark myself. But I find something very interesting and we might utilize the [tool](https://github.com/open-mmlab/mmsegmentation).
